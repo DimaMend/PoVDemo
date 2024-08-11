@@ -1,8 +1,7 @@
 {
   "settingsInheritedFrom": "DimaMend/whitesource-config@main",
   "scanSettings": {
-    "enableReachability": true,
-    "exploitability": true
+    "enableReachability": true
   },
   "checkRunSettings": {
     "strictMode": "warning"
@@ -13,14 +12,13 @@
   },
   "remediateSettings": {
     "workflowRules": {
-      "enabled": true
+      "enabled": false
     },
     "enableRenovate": true,
     "extends": [
       "config:recommended",
-      "mergeConfidence:all-badges"
+      "mergeConfidence:all-badges",
+      "github>mend-toolkit/mend-examples//Repo-Integration/Renovate/smart-merge"
     ]
   }
 }
-
-
